@@ -11,7 +11,7 @@ import SwiftUI
 struct Lab02_SwiftUI_View_LabApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PricingView()
         }
     }
 }

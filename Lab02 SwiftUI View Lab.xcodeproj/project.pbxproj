@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D50668422C824330002F2FC2 /* Lab02_SwiftUI_View_LabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50668412C824330002F2FC2 /* Lab02_SwiftUI_View_LabApp.swift */; };
-		D50668442C824330002F2FC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50668432C824330002F2FC2 /* ContentView.swift */; };
+		D50668442C824330002F2FC2 /* PricingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50668432C824330002F2FC2 /* PricingView.swift */; };
 		D50668462C824332002F2FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50668452C824332002F2FC2 /* Assets.xcassets */; };
 		D50668492C824332002F2FC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D50668482C824332002F2FC2 /* Preview Assets.xcassets */; };
 		D50668532C824332002F2FC2 /* Lab02_SwiftUI_View_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50668522C824332002F2FC2 /* Lab02_SwiftUI_View_LabTests.swift */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		D506683E2C824330002F2FC2 /* Lab02 SwiftUI View Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lab02 SwiftUI View Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50668412C824330002F2FC2 /* Lab02_SwiftUI_View_LabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab02_SwiftUI_View_LabApp.swift; sourceTree = "<group>"; };
-		D50668432C824330002F2FC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D50668432C824330002F2FC2 /* PricingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingView.swift; sourceTree = "<group>"; };
 		D50668452C824332002F2FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D50668482C824332002F2FC2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D506684E2C824332002F2FC2 /* Lab02 SwiftUI View LabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab02 SwiftUI View LabTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				D50668412C824330002F2FC2 /* Lab02_SwiftUI_View_LabApp.swift */,
-				D50668432C824330002F2FC2 /* ContentView.swift */,
+				D50668432C824330002F2FC2 /* PricingView.swift */,
 				D50668452C824332002F2FC2 /* Assets.xcassets */,
 				D50668472C824332002F2FC2 /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D50668442C824330002F2FC2 /* ContentView.swift in Sources */,
+				D50668442C824330002F2FC2 /* PricingView.swift in Sources */,
 				D50668422C824330002F2FC2 /* Lab02_SwiftUI_View_LabApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

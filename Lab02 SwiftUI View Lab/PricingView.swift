@@ -9,9 +9,96 @@ import SwiftUI
 
 struct PricingView: View {
     var body: some View {
-        RoundedRectangle(cornerRadius: 20)
-            .fill(Color.purple)
-            .padding()
+        VStack {
+            VStack {
+                Text("Choose")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+                
+                Text("Your Plan")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
+            }
+            .padding(.top, 20)
+
+            HStack(spacing: 40) {
+                VStack {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 40)
+                            .fill(Color.purple)
+                            .frame(width: 160, height: 290)
+                        
+                        VStack {
+                            Text("Basic")
+                                .font(.largeTitle)
+                                .fontWeight(.black)
+                                .foregroundColor(.white)
+                            
+                            Text("$9")
+                                .font(.largeTitle)
+                                .fontWeight(.black)
+                                .foregroundColor(.white)
+                            
+                            Text("per month")
+                                .font(.headline)
+                                .fontWeight(.black)
+                                .foregroundColor(.white)
+                        }
+                    }
+                }
+                
+                VStack {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 40)
+                            .fill(Color.mint)
+                            .frame(width: 160, height: 290)
+                        
+                        VStack {
+                            Text("Pro")
+                                .font(.largeTitle)
+                                .fontWeight(.black)
+                                .foregroundColor(.black)
+                            
+                            Text("$19")
+                                .font(.largeTitle)
+                                .fontWeight(.black)
+                                .foregroundColor(.black)
+                            
+                            Text("per month")
+                                .font(.headline)
+                                .fontWeight(.black)
+                                .foregroundColor(.black)
+                        }
+                    }
+                }
+            }
+            .padding(.horizontal, 20)
+            
+            ZStack {
+                RoundedRectangle(cornerRadius: 40)
+                    .fill(Color.yellow)
+                    .frame(width: 360, height: 280)
+                
+                VStack {
+                    Text("Team")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                        .foregroundColor(.black)
+                    
+                    Text("$199")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                        .foregroundColor(.black)
+                    
+                    Text("per month")
+                        .font(.headline)
+                        .fontWeight(.black)
+                        .foregroundColor(.black)
+                }
+            }
+            .padding(.top, 10)
+        }
+        .padding()
     }
 }
 
