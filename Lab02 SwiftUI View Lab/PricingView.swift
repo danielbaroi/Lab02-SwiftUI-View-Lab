@@ -9,96 +9,100 @@ import SwiftUI
 
 struct PricingView: View {
     var body: some View {
-        VStack {
+        ZStack{
             VStack {
-                Text("Choose")
-                    .font(.largeTitle)
-                    .fontWeight(.black)
-                
-                Text("Your Plan")
-                    .font(.largeTitle)
-                    .fontWeight(.black)
-            }
-            .padding(.top, 20)
+              
+                VStack {
+                    Text("Choose")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                    
+                    Text("Your Plan")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                    
+                }
+                .padding(.top, -20)
 
-            HStack(spacing: 40) {
-                VStack {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 40)
-                            .fill(Color.purple)
-                            .frame(width: 160, height: 290)
-                        
-                        VStack {
-                            Text("Basic")
-                                .font(.largeTitle)
-                                .fontWeight(.black)
-                                .foregroundColor(.white)
+                HStack(spacing: 40) {
+                    VStack {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 40)
+                                .fill(Color.purple)
+                                .frame(width: 160, height: 290)
                             
-                            Text("$9")
-                                .font(.largeTitle)
-                                .fontWeight(.black)
-                                .foregroundColor(.white)
+                            VStack {
+                                Text("Basic")
+                                    .font(.largeTitle)
+                                    .fontWeight(.black)
+                                    .foregroundColor(.white)
+                                
+                                Text("$9")
+                                    .font(.largeTitle)
+                                    .fontWeight(.black)
+                                    .foregroundColor(.white)
+                                
+                                Text("per month")
+                                    .font(.headline)
+                                    .fontWeight(.black)
+                                    .foregroundColor(.white)
+                            }
+                        }
+                    }
+                    
+                    VStack {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 40)
+                                .fill(Color.mint)
+                                .frame(width: 160, height: 290)
                             
-                            Text("per month")
-                                .font(.headline)
-                                .fontWeight(.black)
-                                .foregroundColor(.white)
+                            VStack {
+                                Text("Pro")
+                                    .font(.largeTitle)
+                                    .fontWeight(.black)
+                                    .foregroundColor(.black)
+                                
+                                Text("$19")
+                                    .font(.largeTitle)
+                                    .fontWeight(.black)
+                                    .foregroundColor(.black)
+                                
+                                Text("per month")
+                                    .font(.headline)
+                                    .fontWeight(.black)
+                                    .foregroundColor(.black)
+                            }
                         }
                     }
                 }
+                .padding(.horizontal, 20)
                 
-                VStack {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 40)
-                            .fill(Color.mint)
-                            .frame(width: 160, height: 290)
+                ZStack {
+                    RoundedRectangle(cornerRadius: 40)
+                        .fill(Color.yellow)
+                        .frame(width: 360, height: 300)
+                    
+                    VStack {
+                        Text("Team")
+                            .font(.largeTitle)
+                            .fontWeight(.black)
+                            .foregroundColor(.black)
                         
-                        VStack {
-                            Text("Pro")
-                                .font(.largeTitle)
-                                .fontWeight(.black)
-                                .foregroundColor(.black)
-                            
-                            Text("$19")
-                                .font(.largeTitle)
-                                .fontWeight(.black)
-                                .foregroundColor(.black)
-                            
-                            Text("per month")
-                                .font(.headline)
-                                .fontWeight(.black)
-                                .foregroundColor(.black)
-                        }
+                        Text("$199")
+                            .font(.largeTitle)
+                            .fontWeight(.black)
+                            .foregroundColor(.black)
+                        
+                        Text("per month")
+                            .font(.headline)
+                            .fontWeight(.black)
+                            .foregroundColor(.black)
                     }
                 }
+                .padding(.top, 0)
             }
-            .padding(.horizontal, 20)
-            
-            ZStack {
-                RoundedRectangle(cornerRadius: 40)
-                    .fill(Color.yellow)
-                    .frame(width: 360, height: 280)
-                
-                VStack {
-                    Text("Team")
-                        .font(.largeTitle)
-                        .fontWeight(.black)
-                        .foregroundColor(.black)
-                    
-                    Text("$199")
-                        .font(.largeTitle)
-                        .fontWeight(.black)
-                        .foregroundColor(.black)
-                    
-                    Text("per month")
-                        .font(.headline)
-                        .fontWeight(.black)
-                        .foregroundColor(.black)
-                }
-            }
-            .padding(.top, 10)
+            .padding()
         }
-        .padding()
     }
 }
 
