@@ -7,12 +7,17 @@
 
 import SwiftUI
 
-struct PricingView: View {
-    var body: some View {
-        ZStack{
-            VStack {
+struct PricingView: View 
+{
+    var body: some View
+    {
+        ZStack
+        {
+            VStack 
+            {
               
-                VStack {
+                VStack 
+                {
                     Text("Choose")
                         .font(.largeTitle)
                         .fontWeight(.black)
@@ -24,14 +29,18 @@ struct PricingView: View {
                 }
                 .padding(.top, 0)
 
-                HStack(spacing: 50) {
-                    VStack {
-                        ZStack {
+                HStack(spacing: 50) 
+                {
+                    VStack 
+                    {
+                        ZStack 
+                        {
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(Color.purple)
                                 
                             
-                            VStack {
+                            VStack 
+                            {
                                 Text("Basic")
                                     .font(.largeTitle)
                                     .fontWeight(.black)
@@ -50,12 +59,15 @@ struct PricingView: View {
                         }
                     }
                     
-                    VStack {
-                        ZStack {
+                    VStack 
+                    {
+                        ZStack 
+                        {
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(Color.mint)
                             
-                            VStack {
+                            VStack 
+                            {
                                 Text("Pro")
                                     .font(.largeTitle)
                                     .fontWeight(.black)
@@ -76,12 +88,13 @@ struct PricingView: View {
                 }
                 .padding(.horizontal, 0)
                 
-                ZStack {
+                ZStack 
+                {
                     RoundedRectangle(cornerRadius: 40)
                         .fill(Color.yellow)
-                        //.frame(width: 360, height: 300)
                     
-                    VStack {
+                    VStack 
+                    {
                         Text("Team")
                             .font(.largeTitle)
                             .fontWeight(.black)
@@ -105,6 +118,7 @@ struct PricingView: View {
     }
 }
 
-#Preview {
+#Preview 
+{
     PricingView()
 }
