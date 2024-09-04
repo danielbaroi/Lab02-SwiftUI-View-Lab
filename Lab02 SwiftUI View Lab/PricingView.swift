@@ -22,14 +22,14 @@ struct PricingView: View {
                         .fontWeight(.black)
                     
                 }
-                .padding(.top, -20)
+                .padding(.top, 0)
 
-                HStack(spacing: 40) {
+                HStack(spacing: 50) {
                     VStack {
                         ZStack {
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(Color.purple)
-                                .frame(width: 160, height: 290)
+                                
                             
                             VStack {
                                 Text("Basic")
@@ -54,7 +54,6 @@ struct PricingView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 40)
                                 .fill(Color.mint)
-                                .frame(width: 160, height: 290)
                             
                             VStack {
                                 Text("Pro")
@@ -75,12 +74,12 @@ struct PricingView: View {
                         }
                     }
                 }
-                .padding(.horizontal, 20)
+                .padding(.horizontal, 0)
                 
                 ZStack {
                     RoundedRectangle(cornerRadius: 40)
                         .fill(Color.yellow)
-                        .frame(width: 360, height: 300)
+                        //.frame(width: 360, height: 300)
                     
                     VStack {
                         Text("Team")
